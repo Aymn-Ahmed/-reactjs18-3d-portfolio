@@ -1,11 +1,14 @@
-import logo from "./logo.png";
+import logo from "./logo.jpg";
 import backend from "./backend.png";
+import linkedin from "./linkedin.svg";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import whatsapp from "./whatsapp.png";
+import whatsappIcon from "./whatsapp-icon.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,6 +40,7 @@ export {
   mobile,
   web,
   github,
+  linkedin,
   menu,
   close,
   css,
@@ -59,4 +63,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  whatsapp,
+  whatsappIcon,
 };

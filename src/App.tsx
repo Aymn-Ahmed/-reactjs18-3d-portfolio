@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-
+import { useTranslation } from "react-i18next";
 import {
   About,
   Contact,
@@ -10,21 +10,25 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Architecture,
 } from "./components";
 import { useEffect } from "react";
-import { config } from "./constants/config";
 
 const App = () => {
+  const { i18n } = useTranslation();
+
   useEffect(() => {
-    if (document.title !== config.html.title) {
-      document.title = config.html.title;
-    }
-  }, []);
+    const title = i18n.language === 'ar' 
+      ? "أيمن أحمد — مطور تطبيقات متكامل" 
+      : "Ayman Ahmed — Full Stack Developer";
+    document.title = title;
+  }, [i18n.language]);
 
   return (
     <BrowserRouter>
       <div className="bg-primary relative z-0">
-        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
+        <StarsCanvas />
+        <div className="bg-gradient-to-b from-[#050816] via-[#151030] to-[#050816] bg-cover bg-center bg-no-repeat">
           <Navbar />
           <Hero />
         </div>
@@ -32,11 +36,9 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
+        <Architecture />
         <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
+        <Contact />
       </div>
     </BrowserRouter>
   );

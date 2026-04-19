@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "architecture": "Architecture",
+    "contact": "Contact",
+    "language": "AR"
+  },
+  "services": {
+    "fullstack": "Full Stack Developer",
+    "react": "React.js Specialist",
+    "dotnet": "ASP.NET Core Expert",
+    "sql": "SQL Database Designer"
+  },
+  "architecture_descriptions": {
+    "fullstack": "End-to-end system design covering both high-performance backends and modern frontend architectures for enterprise solutions.",
+    "react": "Comprehensive frontend architecture focusing on component modularity, state management efficiency, and atomic design principles.",
+    "dotnet": "Robust backend architecture utilizing Modular Monoliths, Clean Architecture, and Domain-Driven Design (DDD) to ensure scalability.",
+    "sql": "High-integrity database modeling focusing on relational efficiency, normalization, and optimized query performance for complex data."
+  },
+  "modules": {
+    "identity": {
+      "title": "Identity & Security",
+      "description": "User authentication, role-based access control, and tenant security."
+    },
+    "billing": {
+      "title": "Billing & Finance",
+      "description": "Automated invoicing, tax processing, and financial reporting."
+    },
+    "tenancy": {
+      "title": "Tenancy Management",
+      "description": "Multi-tenant isolation and subscription-based access control."
+    },
+    "invoices": {
+      "title": "Invoices & Documents",
+      "description": "Generate and manage digital invoices with automated processing."
+    }
+  },
+  "hero": {
+    "name": "Ayman Ahmed",
+    "p": ["Full Stack Developer specialized in", "React.js, ASP.NET Core, and SQL Server"]
+  },
+  "sections": {
+    "about": {
+      "p": "Introduction",
+      "h2": "Overview.",
+      "content": "I'm a motivated Full Stack Developer with strong expertise in building modern web applications using React.js and robust backend systems with ASP.NET Core. I specialize in creating efficient, scalable, and user-friendly solutions with a focus on clean code and layered architecture. Let's work together to bring your complex business requirements to life!"
+    },
+    "experience": {
+      "p": "Engineering Solutions",
+      "h2": "Project Experience."
+    },
+    "architecture": {
+      "p": "Technical Depth",
+      "h2": "Modular Systems.",
+      "content": "I specialize in building complex Enterprise systems using Modular Monolith architectures. By decoupling systems into independent modules like Identity, Billing, and Invoices, I ensure that the software is scalable, maintainable, and strictly follows Domain-Driven Design (DDD) principles."
+    },
+    "works": {
+      "p": "My technical portfolio",
+      "h2": "Key Systems.",
+      "content": "The following projects demonstrate my ability to handle complex logic and architectural designs. From desktop license management to simulation systems, each project reflects my commitment to data integrity, performance, and user experience.",
+      "commercialBadge": "💎 Premium Project",
+      "orderLicense": "💰 Order Commercial License",
+      "highlights": "Commercial License Highlights",
+      "availablePurchase": "AVAILABLE FOR PURCHASE"
+    },
+    "contact": {
+      "p": "Get in touch",
+      "h2": "Contact.",
+      "form": {
+        "name": { "span": "Your Name", "placeholder": "What's your name?" },
+        "email": { "span": "Your Email", "placeholder": "What's your email?" },
+        "message": { "span": "Your Message", "placeholder": "What do you want to say?" },
+        "submit": "Send",
+        "sending": "Sending..."
+      }
+    }
+  },
+  "experiences": {
+    "freelance": {
+      "title": "Full Stack Developer (Junior)",
+      "company": "Professional Training / Freelance",
+      "date": "2023 - Present",
+      "points": [
+        "Designed and implemented high-performance desktop and web applications using C# and React.js.",
+        "Developed complex administrative systems like DVLD using 3-Layer Architecture for better scalability.",
+        "Ensured data integrity and secure transactions in banking simulation projects.",
+        "Created modern, responsive user interfaces using Material UI and custom CSS."
+      ]
+    },
+    "diploma": {
+      "title": "Diploma in Computer Science",
+      "company": "National Institute for Administrative Sciences",
+      "date": "2022 - 2024",
+      "points": [
+        "Focused on software engineering principles, OOP, and database management.",
+        "Participated in multiple academic projects involving SQL Server and .NET.",
+        "Graduated with a strong foundation in both desktop and web development."
+      ]
+    }
+  },
+  "testimonials": {
+    "saad": {
+      "text": "Ayman did a great job on our management system. His attention to detail and architectural knowledge is impressive.",
+      "name": "Saad Al-Amri",
+      "designation": "Product Owner",
+      "company": "Freelance Client"
+    }
+  },
+  "projects": {
+    "communication-hub": {
+      "name": "Enterprise Communication Hub",
+      "description": "A highly extensible Real-time Communication Hub for enterprise systems. I engineered the core messaging engine, integrated dynamic tracking for appointments and messages, and designed a modular framework that allows seamless integration of Support, Inquiry, and Incident Reporting sections.",
+      "features": [
+        "Real-time Messaging Engine (SignalR)",
+        "High-Performance Modular Monolith Architecture",
+        "Dynamic Tracking (Appointments & Incidents)",
+        "White-label Ready (Fully Customizable UI)",
+        "Multi-tenant Identity System Support",
+        "Complete Source Code & Documentation"
+      ]
+    },
+    "gcorp-ecommerce": {
+      "name": "G-Corp | E-commerce Portfolio",
+      "description": "A curated portfolio of 8 professional e-commerce stores built for clients across Saudi Arabia — covering fashion, perfumes, fabrics, handbags, flowers, and more. Full-service delivery: design, development, and deployment."
+    },
+    "invoice-flow": {
+      "name": "InvoiceFlowPro",
+      "description": "A professional Modular Monolith system designed for invoice management, featuring advanced modules for Identity, Tenancy, Billing, and Automated Processing. Built with DDD principles and clean architecture."
+    },
+    "dvld": {
+      "name": "DVLD System",
+      "description": "A comprehensive 3-layer management system for vehicle license services, handling issuance, renewal, and suspension with fine-grained role-based access control."
+    },
+    "banking": {
+      "name": "Banking Simulation",
+      "description": "A secure banking system simulation that replicates core banking operations, account management, and fund transfers using OOP principles and layered architecture."
+    },
+    "apartment-rental": {
+      "name": "Apartment Rental",
+      "description": "An automated management system for apartments and tenants, managing contracts, payments, and billing cycles with automated business rules."
+    },
+    "3d-portfolio": {
+      "name": "3D Personal Portfolio",
+      "description": "A high-end interactive 3D web application designed to showcase professional expertise. Built with high-performance 3D models, dynamic stars background, and smooth Framer Motion animations."
+    }
+  }
+}
