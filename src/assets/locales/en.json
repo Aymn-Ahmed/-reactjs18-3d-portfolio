@@ -144,5 +144,11 @@
       "name": "3D Personal Portfolio",
       "description": "A high-end interactive 3D web application designed to showcase professional expertise. Built with high-performance 3D models, dynamic stars background, and smooth Framer Motion animations."
     }
+  },
+  "lightbox": {
+    "close": "Close",
+    "next": "Next",
+    "prev": "Previous",
+    "of": "of"
   }
 }

@@ -178,7 +178,7 @@ const projects: TProject[] = [
       { name: "client-work", color: "orange-text-gradient" },
     ],
     image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?q=80&w=2070&auto=format&fit=crop", // E-commerce
-    sourceCodeLink: "https://github.com/Aymn-Ahmed",
+    sourceCodeLink: "https://github.com/Aymn-Ahmed/g-corp-portfolio",
     liveLink: "https://g-corp-portfolio.vercel.app/",
   },
   {

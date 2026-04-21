@@ -1,6 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import useEscapeKey from "../../hooks/useEscapeKey";
 import ImageGrid from "./ImageGrid";
 
 interface ArchitectureModalProps {
@@ -24,6 +25,8 @@ const ArchitectureModal: React.FC<ArchitectureModalProps> = ({
 }) => {
   const { i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
+
+  useEscapeKey(onClose, isOpen);
 
   if (!serviceId) return null;
 

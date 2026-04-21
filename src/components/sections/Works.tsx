@@ -116,17 +116,21 @@ const ProjectCard: React.FC<{ index: number; onClick: () => void } & TProject> =
   );
 };
 
+import useEscapeKey from "../../hooks/useEscapeKey";
+
 const Works = () => {
   const { t, i18n } = useTranslation();
   const isArabic = i18n.language === "ar";
   const [selectedProject, setSelectedProject] = useState<TProject | null>(null);
 
+  const closeModal = () => setSelectedProject(null);
+  
+  useEscapeKey(closeModal, selectedProject !== null);
+
   useEffect(() => {
     document.body.style.overflow = selectedProject ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [selectedProject]);
-
-  const closeModal = () => setSelectedProject(null);
 
   return (
     <>

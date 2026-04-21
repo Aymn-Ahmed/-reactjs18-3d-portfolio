@@ -1,14 +1,13 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { useRef } from "react";
 
 import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
+import { useState } from "react";
+import { useRef } from "react";
 
 const INITIAL_STATE = {
   name: "",
@@ -37,14 +36,14 @@ const Contact = () => {
     setLoading(true);
 
     const phoneNumber = config.html.phone.replace(/[^0-9]/g, "");
-    const text = isArabic 
+    const text = isArabic
       ? `مرحباً أيمن،\n\nاسمي: ${form.name}.\nبريدي الإلكتروني: ${form.email}.\n\nالرسالة:\n${form.message}`
       : `Hello Ayman,\n\nMy name is ${form.name}.\nMy email is ${form.email}.\n\nMessage:\n${form.message}`;
-    
+
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-    
+
     window.open(whatsappUrl, "_blank");
-    
+
     setLoading(false);
     setForm(INITIAL_STATE);
   };
