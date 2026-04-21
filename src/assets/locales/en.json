@@ -38,13 +38,16 @@
   },
   "hero": {
     "name": "Ayman Ahmed",
-    "p": ["Full Stack Developer specialized in", "React.js, ASP.NET Core, and SQL Server"]
+    "p": [
+      "Full Stack Developer specialized in",
+      "React.js, ASP.NET Core, and SQL Server"
+    ]
   },
   "sections": {
     "about": {
       "p": "Introduction",
       "h2": "Overview.",
-      "content": "I'm a motivated Full Stack Developer with strong expertise in building modern web applications using React.js and robust backend systems with ASP.NET Core. I specialize in creating efficient, scalable, and user-friendly solutions with a focus on clean code and layered architecture. Let's work together to bring your complex business requirements to life!"
+      "content": "I am a Full Stack Developer dedicated to engineering high-performance web applications and robust backend systems. I specialize in building efficient, scalable enterprise solutions with a deep focus on Clean Architecture and Domain-Driven Design (DDD). My goal is to transform complex business requirements into seamless digital experiences."
     },
     "experience": {
       "p": "Engineering Solutions",
@@ -68,24 +71,52 @@
       "p": "Get in touch",
       "h2": "Contact.",
       "form": {
-        "name": { "span": "Your Name", "placeholder": "What's your name?" },
-        "email": { "span": "Your Email", "placeholder": "What's your email?" },
-        "message": { "span": "Your Message", "placeholder": "What do you want to say?" },
+        "name": {
+          "span": "Your Name",
+          "placeholder": "What's your name?"
+        },
+        "email": {
+          "span": "Your Email",
+          "placeholder": "What's your email?"
+        },
+        "message": {
+          "span": "Your Message",
+          "placeholder": "What do you want to say?"
+        },
         "submit": "Send",
         "sending": "Sending..."
+      },
+      "feedbacks": {
+        "p": "What others say",
+        "h2": "Testimonials.",
+        "add_card": {
+          "title": "Share Your Experience",
+          "p": "Worked with me? I'd love to hear your feedback!"
+        },
+        "modal": {
+          "h2": "Add Testimonial",
+          "p": "Your feedback will be sent via WhatsApp for review before being added to the site.",
+          "fields": {
+            "name": "Full Name",
+            "designation": "Designation / Role",
+            "company": "Company / Project",
+            "testimonial": "Your Feedback"
+          },
+          "submit": "Send via WhatsApp"
+        }
       }
     }
   },
   "experiences": {
     "freelance": {
-      "title": "Full Stack Developer (Junior)",
-      "company": "Professional Training / Freelance",
+      "title": "Full Stack Developer",
+      "company": "Professional Projects & Freelance",
       "date": "2023 - Present",
       "points": [
-        "Designed and implemented high-performance desktop and web applications using C# and React.js.",
-        "Developed complex administrative systems like DVLD using 3-Layer Architecture for better scalability.",
-        "Ensured data integrity and secure transactions in banking simulation projects.",
-        "Created modern, responsive user interfaces using Material UI and custom CSS."
+        "Designed and implemented high-performance enterprise applications using .NET and React.js.",
+        "Developed complex systems like DVLD using 3-Layer Architecture for maximum scalability.",
+        "Ensured high data integrity and secure transaction logic in banking and financial modules.",
+        "Built modular, responsive user interfaces following Atomic Design principles."
       ]
     },
     "diploma": {
@@ -93,9 +124,9 @@
       "company": "National Institute for Administrative Sciences",
       "date": "2022 - 2024",
       "points": [
-        "Focused on software engineering principles, OOP, and database management.",
-        "Participated in multiple academic projects involving SQL Server and .NET.",
-        "Graduated with a strong foundation in both desktop and web development."
+        "Specialized in software engineering principles, OOP, and relational database management.",
+        "Engineered multiple academic projects focusing on SQL Server performance.",
+        "Graduated with a strong foundation in architectural patterns and desktop-to-web migration."
       ]
     }
   },
@@ -110,7 +141,7 @@
   "projects": {
     "communication-hub": {
       "name": "Enterprise Communication Hub",
-      "description": "A highly extensible Real-time Communication Hub for enterprise systems. I engineered the core messaging engine, integrated dynamic tracking for appointments and messages, and designed a modular framework that allows seamless integration of Support, Inquiry, and Incident Reporting sections.",
+      "description": "A highly extensible Real-time Communication Hub for enterprise systems. I engineered the core messaging engine using SignalR and designed a modular framework for Support and Incident Reporting.",
       "features": [
         "Real-time Messaging Engine (SignalR)",
         "High-Performance Modular Monolith Architecture",
@@ -122,27 +153,27 @@
     },
     "gcorp-ecommerce": {
       "name": "G-Corp | E-commerce Portfolio",
-      "description": "A curated portfolio of 8 professional e-commerce stores built for clients across Saudi Arabia — covering fashion, perfumes, fabrics, handbags, flowers, and more. Full-service delivery: design, development, and deployment."
+      "description": "A curated portfolio of 8 professional e-commerce stores built for clients across Saudi Arabia — covering fashion, perfumes, and fabrics. Full-service delivery from design to deployment."
     },
     "invoice-flow": {
       "name": "InvoiceFlowPro",
-      "description": "A professional Modular Monolith system designed for invoice management, featuring advanced modules for Identity, Tenancy, Billing, and Automated Processing. Built with DDD principles and clean architecture."
+      "description": "A professional Modular Monolith system designed for invoice management, featuring advanced modules for Identity, Tenancy, and Billing built with DDD principles."
     },
     "dvld": {
       "name": "DVLD System",
-      "description": "A comprehensive 3-layer management system for vehicle license services, handling issuance, renewal, and suspension with fine-grained role-based access control."
+      "description": "A comprehensive 3-layer management system for vehicle license services, handling issuance and renewal with role-based access control (RBAC)."
     },
     "banking": {
       "name": "Banking Simulation",
-      "description": "A secure banking system simulation that replicates core banking operations, account management, and fund transfers using OOP principles and layered architecture."
+      "description": "A secure banking system simulation replicating core operations and fund transfers using OOP principles and layered architecture."
     },
     "apartment-rental": {
       "name": "Apartment Rental",
-      "description": "An automated management system for apartments and tenants, managing contracts, payments, and billing cycles with automated business rules."
+      "description": "An automated management system for apartments managing contracts and payments with automated business rules."
     },
     "3d-portfolio": {
       "name": "3D Personal Portfolio",
-      "description": "A high-end interactive 3D web application designed to showcase professional expertise. Built with high-performance 3D models, dynamic stars background, and smooth Framer Motion animations."
+      "description": "An interactive 3D web application designed to showcase expertise, featuring high-performance models and Framer Motion animations."
     }
   },
   "lightbox": {
