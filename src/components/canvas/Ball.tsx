@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -39,14 +39,37 @@ const Ball = (props: any) => {
 };
 
 const BallCanvas: React.FC<{ icon: string }> = ({ icon }) => {
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    const touchMediaQuery = window.matchMedia("(pointer: coarse)");
+    setIsTouchDevice(touchMediaQuery.matches);
+
+    const handleTouchChange = (event: MediaQueryListEvent) => {
+      setIsTouchDevice(event.matches);
+    };
+
+    touchMediaQuery.addEventListener("change", handleTouchChange);
+
+    return () => {
+      touchMediaQuery.removeEventListener("change", handleTouchChange);
+    };
+  }, []);
+
   return (
     <Canvas
       frameloop="demand"
-      dpr={[1, 2]}
-      gl={{ preserveDrawingBuffer: true }}
+      dpr={[1, 1.5]}
+      gl={{ powerPreference: "high-performance", antialias: false }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enablePan={false} enableZoom={false} />
+        <OrbitControls
+          enablePan={false}
+          enableZoom={false}
+          enableRotate={!isTouchDevice}
+          autoRotate={isTouchDevice}
+          autoRotateSpeed={1.8}
+        />
         <Ball imgUrl={icon} />
       </Suspense>
 

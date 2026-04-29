@@ -7,7 +7,7 @@ const Hero = () => {
   const { t, i18n } = useTranslation();
   
   return (
-    <section className={`relative mx-auto h-screen w-full`}>
+    <section className={`relative mx-auto h-[100svh] min-h-screen w-full`}>
       <div
         className={`absolute inset-0 top-[120px] mx-auto max-w-7xl ${styles.paddingX} flex flex-row items-start gap-5`}
       >
